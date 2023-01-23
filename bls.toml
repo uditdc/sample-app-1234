@@ -1,0 +1,16 @@
+name = "sample-app-1234"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "sample-app-1234_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "sample-app-1234.wasm"
+command = "npm run build:release"
